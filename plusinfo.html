@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>plusdinfo</title>
+        <link rel="stylesheet" href="stylepage1.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <a href="siteensibs.html"><img src="LogoGI.jpg" width=250px height=180px alt="logo"></a>
+        <div class="container-information">
+            <h2> plus d'information</h2>
+            <iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html" height="300px" width="100%" id="iframe_ENSIBS"></iframe>
+            <h3> Découvrir plus d'information sur notre site:
+            <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations/diplome-d-ingenieur-DI/sciences-technologies-sante-STS/diplome-d-ingenieur-genie-industriel-4-0-en-apprentissage-KWKK6ZQQ.html" id="iframe_ensibs_a"> ensibs.fr</a></h3>
+            <h2>nous contacter</h2>
+            <h1 id="myfooterJS2">retrouvez nous sur notre site de lorient </h1>
+            <button id="button-myfooter" onclick="AffichageTexte2()"> cliquer pour l'adresse</button>
+
+            <h2> Derniere consultation</h2>
+            <button type="button" id="button-myfooter-information" onclick="document.getElementById('consultation').innerHTML = new Date().toLocaleString('fr-FR', {weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit'})">Cliquer ici</button>
+            <p id="consultation"></p>
+        </div>
+    </body>
+</html>
